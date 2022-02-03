@@ -10,9 +10,8 @@ all:
 
 
 devenv:
-	rm -rf env
-	python -m venv env
-	env/bin/pip install -Ue '.[dev]'
+	python -m venv .venv
+	.venv/Scripts/pip install -Ue '.[dev]'
 
 clean:
 	rm -fr *.egg-info dist

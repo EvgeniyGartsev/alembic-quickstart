@@ -16,7 +16,7 @@ from staff import __name__ as project_name
 
 
 PROJECT_PATH = Path(__file__).parent.resolve()
-DEFAULT_PG_URL = 'postgresql://user:hackme@localhost/staff'
+DEFAULT_PG_URL = 'sqlite:///sqlalchemy/database.db'
 
 
 def make_alembic_config(cmd_opts: Union[Namespace, SimpleNamespace],
